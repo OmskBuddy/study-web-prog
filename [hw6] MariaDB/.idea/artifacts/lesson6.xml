@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="lesson6">
+    <output-path>$PROJECT_DIR$/out/artifacts/lesson6</output-path>
+    <root id="root">
+      <element id="module-output" name="hw6" />
+    </root>
+  </artifact>
+</component>
