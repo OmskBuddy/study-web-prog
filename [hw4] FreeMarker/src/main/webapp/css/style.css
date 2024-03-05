@@ -1,0 +1,208 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+
+    --border-color: rgb(185, 185, 185);
+    --boder: 1px solid var(--border-color);
+    --border-radius: 6px;
+    --caption-color: #3B5998;
+}
+
+html {
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: calc(24px + 0.5rem);
+    right: 0;
+}
+
+header nav {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0 2rem 0;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-right: 1rem;
+}
+
+#active-nav-link a {
+    border-bottom: 0.25rem solid var(--caption-color);
+}
+
+.middle {
+    display: flow-root;
+}
+
+.middle main .error404 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -0.5rem;
+}
+
+.middle main .nsp {
+    margin-top: -0.5rem;
+}
+
+.middle main article {
+    overflow: hidden;
+}
+
+.middle main article .title {
+    font-size: 1.43rem;
+    font-weight: bold;
+}
+
+.middle main article .title a {
+    color: #3B5998;
+    text-decoration: none;
+}
+
+.middle main article .body {
+    border-left: 4px solid black;
+    border-left-color: #9e9da1;
+    font-size: 0.95rem;
+    padding-left: 1rem;
+}
+
+.middle main .datatable .caption {
+    background-color: #dedede;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 0.95rem;
+    height: 1.4rem;
+    padding-top: 0.25rem;
+    padding-left: 0.5rem;
+}
+
+.middle main .datatable tr, td, th {
+    border: 1px solid #dedede;
+}
+
+.middle main .datatable tr, th {
+    height: 1.65rem;
+}
+
+.middle main .datatable tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.middle main .datatable table {
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+aside section {
+    border: var(--boder);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+aside section .header {
+    border-bottom: var(--boder);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→ ";
+    font-size: 1.1rem;
+}
+
+aside section .body {
+    padding: 0.25rem;
+}
+
+aside section .footer {
+    border-top: var(--boder);
+    padding: 0.25rem;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+main {
+    margin-right: 21rem;
+}
+
+main .user-card {
+    border: 1px solid black;
+    border-radius: var(--border-radius);
+    padding: 0.8rem;
+}
+
+main .user-card .user-title-name {
+    font-size: 1.8rem;
+}
+
+main .user-card .person-img {
+    float: right;
+    margin-top: -9.5rem;
+}
+
+main .arrows {
+    background: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+main .arrows a {
+    text-decoration: none;
+}
+
+main .arrows span {
+    color: gray;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: var(--boder);
+    text-align: center;
+}
